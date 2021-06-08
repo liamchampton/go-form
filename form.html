@@ -1,0 +1,14 @@
+{{if .Success}}
+    <h1>Job submitted to database</h1>
+{{else}}
+    <h1>Chores</h1>
+    <form method="POST">
+        <label>Job:</label><br />
+        <input type="text" name="job"><br />
+        <label>Day:</label><br />
+        <input type="text" name="day"><br />
+        <label>Who:</label><br />
+        <input type="text" name="who"><br />
+        <input type="submit">
+    </form>
+{{end}}
